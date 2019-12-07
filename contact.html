@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="styles/style-home.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/style-mobile.css" />
     <!-- https://favicon.io/emoji-favicons/japanese-secret-button/ -->
     <link
@@ -54,16 +54,26 @@
       <script src="scripts/script.js"></script>
     </header>
     <main class="container">
-      <div class="photobox"></div>
+      <div
+        class="photobox"
+        style="background-image: url('img/contact-welcome.jpg');"
+      ></div>
       <div class="textbox">
         <section class="text">
-          <h1>"I guess I'm just a silly boy."</h1>
-          <p>
-            Willkommen in meiner kleinen Ecke in dieser riesigen Welt des World
-            Wide Web. Hier stelle ich einen Teil dessen dar, was ich in diesem
-            Leben gerne tue. Um mehr zu erfahren, klicken Sie auf die einzelnen
-            Elemente des Menüs oben.
-          </p>
+          <h1>Kontakt</h1>
+          <!-- https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+          <div class="form">
+                <label for="fname">Vorname</label>
+                <input type="text" id="fname" name="firstname" placeholder="Max">
+            
+                <label for="lname">Familienname</label>
+                <input type="text" id="lname" name="lastname" placeholder="Mustermann">
+                        
+                <label for="subject">Nachricht</label>
+                <textarea id="subject" name="subject" placeholder="Was möchten Sie?" style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+            </div> 
         </section>
       </div>
     </main>

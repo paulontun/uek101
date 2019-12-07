@@ -88,7 +88,7 @@ p {
 .container {
   height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   /*https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items*/
   padding: 10px
 }

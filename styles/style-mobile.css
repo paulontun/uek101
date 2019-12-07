@@ -1,0 +1,67 @@
+/*https://www.quackit.com/css/flexbox/tutorial/create_a_responsive_flexbox_layout.cfm*/
+@media screen and (max-width: 768px) {
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        /*https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items*/
+        padding: 15px
+    }
+
+    .textbox {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 250px;
+        align-items: center;
+        padding: 5%;
+        background-color: #F2D4AE;
+        /*https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items*/
+        margin: 10px;
+        /*https://www.w3schools.com/cssref/pr_border-color.asp*/
+        border: 1px solid rgba(255,255,255,0.5);
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 50px;
+        width: 100%;
+        text-align: center;
+        /*https://stackoverflow.com/questions/36150458/flex-item-overflows-container-due-to-long-word-even-after-using-word-wrap*/
+        word-break: break-word;
+    }
+
+    h1 {
+        font-family: 'Roboto Slab', serif;
+        font-size: 3.5vh;
+    }
+    
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.75vh;
+    }
+    .responsivenav a:not(:first-child) {
+      display: none;
+    }
+  
+    .responsivenav .barcontainer {
+      float: right;
+      display: block;
+    }
+  
+    .responsivenav.responsive {
+      position: relative;
+    }
+  
+    .responsivenav.responsive .barcontainer {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+  
+    .responsivenav.responsive a {
+      float: none;
+      display: block;
+    }
+}
+  
