@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/style-mobile.css" />
+    <!-- https://favicon.io/emoji-favicons/japanese-secret-button/ -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../img/favicon/site.webmanifest" />
+    <!-- https://stackoverflow.com/questions/22466913/google-fonts-url-break-html5-validation-on-w3-org-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <title>Just someone on this world</title>
+  </head>
+  <body>
+    <header>
+      <nav class="responsivenav" id="responsivenav">
+        <a class="active" href="index.html">Home</a>
+        <a href="formula1.html">Formel 1</a>
+        <a href="music.html">Musik</a>
+        <a href="games.html">Games</a>
+        <a href="contact.html">Kontakt</a>
+        <div class="barcontainer" id="barcontainer">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </nav>
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+        crossorigin="anonymous"
+      ></script>
+      <script src="scripts/script.js"></script>
+    </header>
+    <main class="container">
+      <div
+        class="photobox"
+        style="background-image: url(../img/contact-welcome.jpg);"
+      ></div>
+      <div class="textbox">
+        <section class="text">
+          <h1>Kontakt</h1>
+          <!-- https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+          <div class="form">
+                <label for="fname">Vorname</label>
+                <input type="text" id="fname" name="firstname" placeholder="Max">
+            
+                <label for="lname">Familienname</label>
+                <input type="text" id="lname" name="lastname" placeholder="Mustermann">
+                        
+                <label for="subject">Nachricht</label>
+                <textarea id="subject" name="subject" placeholder="Was möchten Sie?" style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+            </div> 
+        </section>
+      </div>
+    </main>
+    <footer>2019 - Designed with my ❤️ from myself.</footer>
+  </body>
+</html>
